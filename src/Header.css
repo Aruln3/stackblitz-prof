@@ -85,6 +85,7 @@
   font-weight: 700;
 }
 
+
 .scrolled .sidebar-toggle {
   margin-top: 12px;
 }
@@ -103,13 +104,6 @@
   font-size: 1vh;
   top: 0;
   z-index: 9998;
-}
-
-.menu {
-  display: flex;
-  align-items: center;
-  font-size: 1vh;
-  padding: 10px;
 }
 
 /* Additional styling */
