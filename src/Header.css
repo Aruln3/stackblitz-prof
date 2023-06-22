@@ -90,26 +90,25 @@
 }
 
 .scrolled .sidebar li {
-  margin-top: 12px;
-  font-size: 1vh;
-  background-color: #54DADF;
-  height: 32px;
-  margin-bottom: 10px;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
-  transition: box-shadow 0.3s ease-in-out;
-  display: flex;
-  padding: 6px 2px;
-  padding-left: 0px;
-  padding-right: 0px;
-  border: 1px solid rgb(0, 0, 0);
-  color: rgb(30, 27, 27);
-  text-decoration: none;
+  background-color: #54dadf;
+  border: 1px solid #000;
   border-radius: 4px;
-  justify-content: center;
-  flex-wrap: nowrap;
+  box-shadow: 0 0 4px rgba(0,0,0,.2);
+  color: #1e1b1b;
+  display: flex;
   flex-direction: row;
-  width: 90px;
-  z-index: 9999;
+  flex-wrap: nowrap;
+  font-size: 1vh;
+  /* height: 32px; */
+  /* justify-content: center; */
+  /* margin-bottom: 10px; */
+  margin-top: 12px;
+  /* padding: 6px 0; */
+  /* text-decoration: none; */
+  /* transition: box-shadow .3s ease-in-out; */
+  /* width: 90px; */
+  /* z-index: 9999; */
+
 }
 
 .scrolled .sidebar li:hover {
