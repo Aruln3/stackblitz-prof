@@ -196,7 +196,7 @@ const MyComponent = () => {
                   className="sc-bdfBwQ sc-bBXqnf eua-dhZ ggtBko group"
                 >
                   <a
-                    href="https://github.com/Aruln3"
+                    href="https://bit.ly/Github-ar"
                     target="_blank"
                     rel="noopener"
                     data-testid="LinkButton"
@@ -272,7 +272,7 @@ const MyComponent = () => {
                     type="text"
                     id="ShareLink"
                     readOnly=""
-                    defaultValue="https://github.com/Aruln3"
+                    defaultValue="https://bit.ly/Github-ar"
                   />
                   <button
                     className="copy"
@@ -300,7 +300,7 @@ const MyComponent = () => {
             className="sc-bdfBwQ sc-bBXqnf eua-dhZ ggtBko group"
           >
             <a
-              href="https://www.behance.net/Arul-"
+              href="https://bit.ly/behance-ar"
               target="_blank"
               rel="noopener"
               data-testid="LinkButton"
@@ -376,7 +376,7 @@ const MyComponent = () => {
               type="text"
               id="SharebeLink"
               readOnly=""
-              defaultValue="https://www.behance.net/Arul-"
+              defaultValue="https://bit.ly/behance-ar"
             />
             <button
               className="copy"
