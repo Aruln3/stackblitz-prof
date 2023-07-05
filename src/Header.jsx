@@ -44,7 +44,7 @@ const Header = () => {
         </button>
         <div className={`sidebar ${isSidebarOpen ? 'open' : ''}`}>
           <ul>
-            <li onClick={() => (window.location.href = '/home')}>Home</li>
+            <li onClick={() => (window.location.href = '/')}>Home</li>
             <li onClick={() => (window.location.href = '/about')}>About</li>
             <li onClick={handleContactClick}>Contact</li>
           </ul>
