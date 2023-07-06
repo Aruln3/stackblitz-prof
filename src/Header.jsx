@@ -58,12 +58,12 @@ const Header = () => {
         </button>
         <div className={`sidebar ${isSidebarOpen ? 'open' : ''}`}>
           <ul>
-            <li onClick={() => (window.location.href = '/')}>Home</li>
+            {/* <li onClick={() => (window.location.href = '/')}>Home</li> */}
             <li onClick={handleContactClick}>Contact</li>
-            <li className="dark-mode-toggle" onClick={toggleDarkMode}>
+            {/* <li className="dark-mode-toggle" onClick={toggleDarkMode}>
               <FontAwesomeIcon icon={modeIcon} className="mode-icon" />
               <span>{modeText}</span>
-            </li>
+            </li> */}
           </ul>
         </div>
       </header>
