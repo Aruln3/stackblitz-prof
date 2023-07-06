@@ -725,3 +725,35 @@ button:active {
 .logo-img:hover {
   filter: none; /* Remove grayscale filter on hover to show the original colors */
 }
+
+/* style.css */
+
+.dark-mode-toggle {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: #fff;
+}
+
+.dark-mode-toggle:hover {
+  color: #ddd;
+}
+
+.dark-mode-toggle svg {
+  margin-right: 5px;
+}
+
+.light-mode-toggle {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: #333;
+}
+
+.light-mode-toggle:hover {
+  color: #666;
+}
+
+.light-mode-toggle svg {
+  margin-right: 5px;
+}

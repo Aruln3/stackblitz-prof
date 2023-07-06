@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import './Header.css'; // Import the corresponding CSS file for styling
+import './style.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faTimes, faLightbulb, faMoon } from '@fortawesome/free-solid-svg-icons';
 
 const Header = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [showArrow, setShowArrow] = useState(false); // State to track arrow visibility
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -33,20 +35,35 @@ const Header = () => {
     }, 3000);
   };
 
+  const toggleDarkMode = () => {
+    setIsDarkMode(!isDarkMode);
+  };
+
+  const toggleIcon = isSidebarOpen ? faTimes : faBars;
+  const modeIcon = isDarkMode ? faMoon : faLightbulb;
+  const modeText = isDarkMode ? 'Dark' : 'Light';
+
   return (
     <>
-      <header className={`header ${isSidebarOpen ? 'open' : ''} ${isScrolled ? 'scrolled' : ''}`}>
+      <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
         <div className={`logo-container ${isScrolled ? 'show' : ''}`}>
           <div className="logo">Arul D</div>
         </div>
         <button className="sidebar-toggle" onClick={toggleSidebar}>
-          {isSidebarOpen ? <FontAwesomeIcon icon={faTimes} /> : <FontAwesomeIcon icon={faBars} />}
+          {isSidebarOpen ? (
+            <FontAwesomeIcon icon={faTimes} className="close-icon" />
+          ) : (
+            <FontAwesomeIcon icon={faBars} className="open-icon" />
+          )}
         </button>
         <div className={`sidebar ${isSidebarOpen ? 'open' : ''}`}>
           <ul>
             <li onClick={() => (window.location.href = '/')}>Home</li>
-            <li onClick={() => (window.location.href = '/about')}>About</li>
             <li onClick={handleContactClick}>Contact</li>
+            <li className="dark-mode-toggle" onClick={toggleDarkMode}>
+              <FontAwesomeIcon icon={modeIcon} className="mode-icon" />
+              <span>{modeText}</span>
+            </li>
           </ul>
         </div>
       </header>
