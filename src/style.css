@@ -714,3 +714,14 @@ button:active {
 .gap {
   height: 600px;
 }
+
+.logo-img {
+  height: 27px;
+  width: 27px;
+  filter: grayscale(100%); /* Make the image black and white */
+  transition: filter 0.3s; /* Add transition for smooth hover effect */
+}
+
+.logo-img:hover {
+  filter: none; /* Remove grayscale filter on hover to show the original colors */
+}
