@@ -83,7 +83,7 @@ const Header = () => {
       <button>
         <div className="profile-picture-container logo">
           <img
-            src="https://d1fdloi71mui9q.cloudfront.net/UEzg1DYSKWdB8HMhkfWg_88PSqm5yMladHUBA"
+            src="https://i.postimg.cc/3xwZNCwQ/gray.png"
             alt=""
             role="presentation"
             data-testid="TopBar-ProfileImage"
