@@ -205,15 +205,16 @@ https://i.postimg.cc/BJsygrYm/h.png
 @media only screen and (min-width: 1024px) and (max-width: 2366px) {
   /* CSS rules for laptops go here */
   .bottom {
-    border-radius: 50px;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
     /* width: 88%; */
     position: fixed;
     backdrop-filter: blur(5px);
     bottom: 0;
     /* padding-bottom: 15px; */
     padding-top: 6px;
-  padding-bottom: 18px;
-  margin-bottom: 7px;
+  padding-bottom: 24px;
+  margin-bottom: 0px;
 }
   }
   
