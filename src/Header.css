@@ -566,6 +566,13 @@ html {
 /* Media Query for iPads */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   /* CSS rules for iPads go here */
+  .arrow-container {
+    position: fixed;
+    bottom:80px;
+    left: 50%;
+    width: 150px;
+    transform: translateX(-50%);
+  }
 }
 /* Media Query for Mobile Phones */
 @media only screen and (max-width: 767px) {
@@ -597,6 +604,13 @@ html {
        top:22.5px;
        animation: zoomEffect 2s infinite;
      }
+     .arrow-container {
+      position: fixed;
+      bottom:80px;
+      left: 50%;
+      width: 150px;
+      transform: translateX(-50%);
+    }
   }
   
   .top-bar-container {
