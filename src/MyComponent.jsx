@@ -503,7 +503,7 @@ const MyComponent = () => {
 
 
         <div className="sc-bdfBwQ XXzWu">
-          <div className="sc-bdfBwQ sc-gsTCUz cUWRuD bhdLno">
+          <div className="sc-bdfBwQ sc-gsTCUz cUWRuD bottom bhdLno">
 
 <a
         target="_blank"

@@ -199,6 +199,50 @@ https://i.postimg.cc/BJsygrYm/h.png
   bottom: 0px;
 }
 
+
+
+/* Media Query for Laptops */
+@media only screen and (min-width: 1024px) and (max-width: 1366px) {
+  /* CSS rules for laptops go here */
+  }
+  
+/* Media Query for iPads */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  /* CSS rules for iPads go here */
+  .bottom {
+    background-color: rgba(51, 51, 51, 0);
+box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+border-radius: 50px;
+width: 84%;
+position: fixed;
+backdrop-filter: blur(5px);
+bottom: 0;
+padding-bottom: 15px;
+padding-top: 10px;
+left: 8%;
+}
+}
+/* Media Query for Mobile Phones */
+@media only screen and (max-width: 767px) {
+  /* CSS rules for mobile phones go here */
+
+    .bottom {
+      background-color: rgba(51, 51, 51, 0);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  border-radius: 50px;
+  width: 84%;
+  position: fixed;
+  backdrop-filter: blur(5px);
+  bottom: 0;
+  padding-bottom: 15px;
+  padding-top: 10px;
+  left: 8%;
+}
+   
+  }
+
+
+
 img {
   display: block;
   vertical-align: baseline;
