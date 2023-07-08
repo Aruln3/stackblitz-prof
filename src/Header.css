@@ -377,7 +377,7 @@ html {
   left: 0;
   right: 0;
   background-color: rgba(255, 255, 255, 0.219);
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(6px);
   border-radius: 50px;
   margin-left: 17%;
   margin-right: 17%;
@@ -554,7 +554,7 @@ html {
     text-overflow: ellipsis; /* Add ellipsis (...) if the text overflows */
     width: 100%;
     font-weight: 600;
-    font-size: 21px;
+    font-size: 19px;
     font-family: 'Capriola', sans-serif;
     text-shadow: none;
   }
