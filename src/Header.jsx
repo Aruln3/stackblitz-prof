@@ -13,15 +13,16 @@ const Header = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-      setIsScrolled(scrollTop > 190);
+      setIsScrolled(scrollTop > 220);
     };
-
+  
     window.addEventListener('scroll', handleScroll);
-
+  
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+
 
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
@@ -78,36 +79,37 @@ const Header = () => {
       )} */}
       
       {isScrolled && (
-
-      <div data-testid="TopBar" id="TopBar" className="top-bar-container">
-      <button>
-        <div className="profile-picture-container logo">
-          <img
-            src="https://i.postimg.cc/3xwZNCwQ/gray.png"
-            alt=""
-            role="presentation"
-            data-testid="TopBar-ProfileImage"
-            filter="none"
-            className="profile-picture"
-          /> 
-        <h3 className="logo1">Arul‎‎ D</h3></div> 
-      </button>
-      <div className="follow-button-container">
-        <div className="follow-button">
-          <button
-            data-testid="FollowButton"
-            className="follow-button-style"
-            id="follow-button-style"
-            onClick={handleContactClick}
-          >
-            <div className="follow-button-content">
-              <h4>Contact</h4>
-            </div>
-          </button>
-        </div>
+   <div data-testid="TopBar" id="TopBar" className={`top-bar-container ${isScrolled ? 'useScrolled' : ''}`}>
+   <button>
+      <div className="profile-picture-container logo">
+        <img
+          src="https://i.postimg.cc/3xwZNCwQ/gray.png"
+          alt=""
+          role="presentation"
+          data-testid="TopBar-ProfileImage"
+          filter="none"
+          className="profile-picture"
+        />
+        <h3 className="logo1">Arul‎‎ D</h3>
+      </div>
+    </button>
+    <div className="follow-button-container">
+      <div className="follow-button">
+        <button
+          data-testid="FollowButton"
+          className="follow-button-style"
+          id="follow-button-style"
+          onClick={handleContactClick}
+        >
+          <div className="follow-button-content">
+            <h4>Contact</h4>
+          </div>
+        </button>
       </div>
     </div>
-    )}
+  </div>
+)}
+
       <div className="follow-button-container-fixed">
         <div className="follow-button">
           <button
