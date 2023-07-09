@@ -127,7 +127,6 @@ html {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: rgb(84, 218, 223);
   background-image: url('https://i.postimg.cc/kJ6cp7qr/site-back.png');
 }
 
@@ -149,7 +148,7 @@ https://i.postimg.cc/BJsygrYm/h.png
   align-items: center;
   flex-direction: column;
   width: 100%;
-  margin-top: 60px;
+  margin-top: 40px;
 }
 
 .jrDHLp {
@@ -292,11 +291,9 @@ h1 {
 
 .kmKxgd {
   margin: 0px;
-  color: rgb(29, 29, 29);
   font-weight: 700;
   font-size: 20px;
   line-height: 1.5;
-  text-overflow: ellipsis;
   max-width: 100%;
   white-space: nowrap;
   overflow: hidden;
@@ -316,7 +313,6 @@ h3 {
   margin: 0px;
   text-align: center;
   font-weight: 700;
-  color: rgb(29, 29, 29);
   font-size: 16px;
   line-height: 1.5;
   font-family: 'Capriola', sans-serif;
@@ -788,32 +784,42 @@ button:active {
 
 /* style.css */
 
-.dark-mode-toggle {
-  display: flex;
-  align-items: center;
+
+
+.light-mode .irZGsh {
+  color: rgb(19, 18, 18);
+}
+
+.dark-mode .kmKxgd {
+  color: rgb(255, 255, 255); /* Override the previous color */
+}
+
+.dark-mode .bSEBXr {
+  position: fixed;
+  inset: 0px;
+  z-index: -1;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgb(84, 218, 223);
+  background-image: url('https://i.postimg.cc/HxNj2n6T/Copy-of-site-back.png');
+}
+
+.dark-mode .irZGsh {
+  color: rgb(254, 254, 254);
+}
+
+.light-mode .sc-dlfnbm {
+  color: rgb(0, 0, 0);
+}
+
+.dark-mode .logo-img {
+  height: 27px;
+  width: 27px;
+  filter: saturate(1); /* Make the image black and white */
+  transition: filter 0.3s; /* Add transition for smooth hover effect */
+}
+
+.eZNKTD{
   cursor: pointer;
-  color: #fff;
-}
-
-.dark-mode-toggle:hover {
-  color: #ddd;
-}
-
-.dark-mode-toggle svg {
-  margin-right: 5px;
-}
-
-.light-mode-toggle {
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  color: #333;
-}
-
-.light-mode-toggle:hover {
-  color: #666;
-} 
-
-.light-mode-toggle svg {
-  margin-right: 5px;
 }

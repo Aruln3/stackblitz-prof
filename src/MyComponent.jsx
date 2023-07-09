@@ -1,6 +1,20 @@
 import React from 'react';
+import { useState } from 'react';
 
 const MyComponent = () => {
+
+    const [isDarkMode, setIsDarkMode] = useState(false);
+  
+    // Function to handle the theme toggle
+    const toggleTheme = () => {
+      setIsDarkMode(!isDarkMode);
+    };
+
+    const profileImageSrc = isDarkMode
+    ? 'https://i.postimg.cc/Pr41NBgM/Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Goat.png'
+    : 'https://i.postimg.cc/3xwZNCwQ/gray.png';
+
+
   const opensDialog = () => {
     const dialog = document.getElementById("sharesDialog");
     dialog.showModal();
@@ -74,9 +88,18 @@ const MyComponent = () => {
 
 
   return (
-    <div>
+    <div className={`sc-bdfBwQ sc-gsTCUz dTcluo ${isDarkMode ? 'dark-mode' : 'light-mode'}`}>
       <>
-        <div className="sc-bdfBwQ dLqIok snipcss-T6IPG">
+
+      <div>
+      {/* Your content */}
+      {/* <button className="toggle-button" onClick={toggleTheme}>
+        {isDarkMode ? (
+          <img src="light-mode-logo.png" alt="Light Mode" />
+        ) : (
+          <img src="dark-mode-logo.png" alt="Dark Mode" />
+        )}
+      </button> */}
           <div className="sc-bdfBwQ sc-jJEJSO bSEBXr fcnSrV"></div>
           <button data-testid="SharesLink" onClick={opensDialog}>
             {/* <svg
@@ -138,10 +161,10 @@ const MyComponent = () => {
 
         {/*    ---------------------- */}
 
-        <div className="sc-bdfBwQ sc-gsTCUz dTcluo bhdLno">
-          <div className="eZNKTD">
+        <div className="sc-bdfBwQ sc-gsTCUz dTcluo bhdLno eZNKTD" onClick={toggleTheme}>
+          <div className="toggle-button">
             <img
-              src="https://i.postimg.cc/3xwZNCwQ/gray.png"
+              src={profileImageSrc}
               alt=""
               role="presentation"
               data-testid="ProfileImage"
