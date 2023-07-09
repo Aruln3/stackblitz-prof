@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import './Header.css'; // Import the corresponding CSS file for styling
-import './style.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes, faLightbulb, faMoon } from '@fortawesome/free-solid-svg-icons';
 
