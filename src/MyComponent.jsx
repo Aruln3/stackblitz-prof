@@ -11,7 +11,7 @@ const MyComponent = () => {
     };
 
     const profileImageSrc = isDarkMode
-    ? 'https://i.postimg.cc/Pr41NBgM/Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Goat.png'
+    ? 'https://i.postimg.cc/qvqzqbfh/Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Goat.png'
     : 'https://i.postimg.cc/3xwZNCwQ/gray.png';
 
 
