@@ -18,7 +18,7 @@ const MyComponent = () => {
     useEffect(() => {
       const themeColorMeta = document.querySelector('meta[name="theme-color"]');
       if (isDarkMode) {
-        themeColorMeta.setAttribute('content', '#101111');
+        themeColorMeta.setAttribute('content', '#444344');
       } else {
         themeColorMeta.setAttribute('content', '#54dadf');
       }
