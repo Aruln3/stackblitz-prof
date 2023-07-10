@@ -12,7 +12,6 @@ body {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
- 
 }
 
 div {
@@ -53,7 +52,7 @@ div {
 
 @media (prefers-color-scheme: dark) {
   /* Dark mode */
-  :root {
+  .dark-mode :root {
     --address-bar-color: #101111;
     --footer-color: #202222;
   }
@@ -199,12 +198,12 @@ https://i.postimg.cc/BJsygrYm/h.png
   width: 100%;
   right: 0px;
   background-color: rgba(51, 51, 51, 0);
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   padding-bottom: 19px;
   bottom: 0px;
 }
-
-
 
 /* Media Query for Laptops */
 @media only screen and (min-width: 1024px) and (max-width: 2366px) {
@@ -218,50 +217,51 @@ https://i.postimg.cc/BJsygrYm/h.png
     bottom: 0;
     /* padding-bottom: 15px; */
     padding-top: 6px;
-  padding-bottom: 24px;
-  margin-bottom: 0px;
-}
+    padding-bottom: 24px;
+    margin-bottom: 0px;
   }
-  
+}
+
 /* Media Query for iPads */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   /* CSS rules for iPads go here */
-  
+
   .bottom {
     background-color: rgba(51, 51, 51, 0);
-box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-border-radius: 50px;
-width: 84%;
-position: fixed;
-backdrop-filter: blur(5px);
-bottom: 0;
-padding-bottom: 15px;
-padding-top: 10px;
-left: 8%;
-margin-bottom: 18px;
-}
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+      rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border-radius: 50px;
+    width: 84%;
+    position: fixed;
+    backdrop-filter: blur(5px);
+    bottom: 0;
+    padding-bottom: 15px;
+    padding-top: 10px;
+    left: 8%;
+    margin-bottom: 18px;
+  }
 }
 /* Media Query for Mobile Phones */
-@media only screen and (max-width: 767px)  {
+@media only screen and (max-width: 767px) {
   /* CSS rules for mobile phones go here */
 
-    .bottom {
-      background-color: rgba(51, 51, 51, 0);
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-  border-radius: 50px;
-  width: 84%;
-  position: fixed;
-  backdrop-filter: blur(5px);
-  bottom: 0;
-  padding-bottom: 15px;
-  padding-top: 10px;
-  left: 8%;
-  margin-bottom: 18px;
-}
-   
+  .bottom {
+    background-color: rgba(51, 51, 51, 0);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+      rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border-radius: 50px;
+    width: 84%;
+    position: fixed;
+    backdrop-filter: blur(5px);
+    bottom: 0;
+    padding-bottom: 15px;
+    padding-top: 10px;
+    left: 8%;
+    margin-bottom: 18px;
   }
-
-
+}
 
 img {
   display: block;
@@ -789,8 +789,6 @@ button:active {
 
 /* style.css */
 
-
-
 .light-mode .irZGsh {
   color: rgb(19, 18, 18);
 }
@@ -825,13 +823,14 @@ button:active {
   transition: filter 0.3s; /* Add transition for smooth hover effect */
 }
 
-.eZNKTD, .irZGsh{
+.eZNKTD,
+.irZGsh {
   cursor: pointer;
 }
 
 body::-webkit-scrollbar {
   width: 5px;
-  background-color: #54DADF;
+  background-color: #54dadf;
 }
 
 /* Track */
@@ -843,7 +842,7 @@ body::-webkit-scrollbar-track {
 
 /* Handle */
 body::-webkit-scrollbar-thumb {
-  background-color: #54DADF;
+  background-color: #54dadf;
   border-radius: 9px;
 }
 
