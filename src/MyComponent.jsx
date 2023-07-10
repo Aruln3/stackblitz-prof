@@ -161,7 +161,7 @@ const MyComponent = () => {
 
         {/*    ---------------------- */}
 
-        <div className="sc-bdfBwQ sc-gsTCUz dTcluo bhdLno eZNKTD" onClick={toggleTheme}>
+        <div className="sc-bdfBwQ sc-gsTCUz dTcluo bhdLno eZNKTD" >
           <div className="toggle-button">
             <img
               src={profileImageSrc}
@@ -169,18 +169,18 @@ const MyComponent = () => {
               role="presentation"
               data-testid="ProfileImage"
               className="sc-iBPRYJ flTywP sc-hBEYos czEoCL"
-              filter="none"
+              filter="none" onClick={toggleTheme}
             />
           </div>
           <div className="sc-bdfBwQ sc-kstrdz llgrqs btjemE">
-            <h1 id="profile-arul-d" className="sc-dlfnbm kmKxgd">
+            <h1 id="profile-arul-d" className="sc-dlfnbm kmKxgd" onClick={toggleTheme}>
               Arul D
             </h1>
           </div>
         </div>
         <div className="jrDHLp">
           <div className="mb-4">
-            <h3 id="header-88137993" className="sc-dlfnbm irZGsh">
+            <h3 id="header-88137993" className="sc-dlfnbm irZGsh" onClick={toggleTheme}>
               Frontend Developer | UI/UX
             </h3>
           </div>
