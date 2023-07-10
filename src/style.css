@@ -52,11 +52,12 @@ div {
 
 @media (prefers-color-scheme: dark) {
   /* Dark mode */
-  .dark-mode :root {
+  .dark-mode:root {
     --address-bar-color: #101111;
     --footer-color: #202222;
   }
 }
+
 
 .dddSHA {
   flex-direction: column;
