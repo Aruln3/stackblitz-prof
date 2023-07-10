@@ -438,7 +438,7 @@ const MyComponent = () => {
             className="sc-bdfBwQ sc-bBXqnf eua-dhZ ggtBko group"
           >
             <a
-              href="https://bit.ly/Arul_Resume"
+              href="https://bit.ly/Arul_Res"
               target="_blank"
               rel="noopener"
               data-testid="LinkButton"
@@ -514,7 +514,7 @@ const MyComponent = () => {
               type="text"
               id="ShareresLink"
               readOnly=""
-              defaultValue="https://bit.ly/Arul_Resume"
+              defaultValue="https://bit.ly/Arul_Res"
             />
             <button
               className="copy"
