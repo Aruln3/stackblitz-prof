@@ -1,5 +1,5 @@
 import React from 'react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 const MyComponent = () => {
 
@@ -14,6 +14,15 @@ const MyComponent = () => {
     ? 'https://i.postimg.cc/qvqzqbfh/Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Goat.png'
     : 'https://i.postimg.cc/3xwZNCwQ/gray.png';
 
+
+    useEffect(() => {
+      const themeColorMeta = document.querySelector('meta[name="theme-color"]');
+      if (isDarkMode) {
+        themeColorMeta.setAttribute('content', '#101111');
+      } else {
+        themeColorMeta.setAttribute('content', '#54dadf');
+      }
+    }, [isDarkMode]);
 
   const opensDialog = () => {
     const dialog = document.getElementById("sharesDialog");
