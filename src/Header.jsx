@@ -82,7 +82,7 @@ const Header = () => {
    <button>
       <div className="profile-picture-container logo">
         <img
-          src="https://i.postimg.cc/3xwZNCwQ/gray.png"
+          src="https://i.postimg.cc/DfBkkRkG/prof-removebg-preview.png"
           alt=""
           role="presentation"
           data-testid="TopBar-ProfileImage"

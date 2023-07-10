@@ -379,8 +379,8 @@ html {
   left: 0;
   right: 0;
   background-color: rgba(87, 220, 225, 0.192);
-  box-shadow: rgba(87, 220, 225) 0px 50px 100px -20px, rgba(87, 220, 225) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-  backdrop-filter: blur(4px);
+  box-shadow: rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; /* Keep the inset shadow */
+  backdrop-filter: blur(3px);
   border-radius: 50px;
   margin-left: 17%;
   margin-right: 17%;
