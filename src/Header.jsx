@@ -23,6 +23,15 @@ const Header = () => {
   }, []);
 
 
+    // const handleLogoClick = () => {
+    //   window.location.href = '/'; // Replace '/' with the desired page URL
+    // };
+
+    const handleLogoClick = () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+  
+
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
   };
@@ -79,7 +88,7 @@ const Header = () => {
       
       {isScrolled && (
    <div data-testid="TopBar" id="TopBar" className={`top-bar-container ${isScrolled ? 'useScrolled' : ''}`}>
-   <button>
+   <button onClick={handleLogoClick}>
       <div className="profile-picture-container logo">
         <img
           src="https://i.postimg.cc/DfBkkRkG/prof-removebg-preview.png"
