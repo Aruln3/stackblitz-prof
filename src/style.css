@@ -794,7 +794,7 @@ button:active {
 }
 
 .dark-mode .kmKxgd {
-  color: rgb(255, 255, 255); /* Override the previous color */
+  color: #b8f4f7; /* Override the previous color */
 }
 
 .dark-mode .bSEBXr {
@@ -809,7 +809,7 @@ button:active {
 }
 
 .dark-mode .irZGsh {
-  color: rgb(254, 254, 254);
+  color: #caf8fa;
 }
 
 .light-mode .sc-dlfnbm {
@@ -862,18 +862,14 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .dark-mode .ggtBko {
-  border: 2px solid #54dadf;
-  transition: none 0s ease 0s;
-  box-shadow: #54dadf 8px 8px 0px 0px;
-  color: rgb(29, 29, 29);
-  background-color: rgb(21, 22, 22);
+  border: 2px solid #050505;
+  box-shadow: #1c1d1d;
+  color: rgb(24, 23, 23);
+  background-color: rgb(25, 28, 28);
 }
 
 .dark-mode .gXKGT {
-  font-weight: 500;
-  font-size: 14px;
   font-family: 'Capriola', sans-serif;
-  line-height: 1.5;
   color: #e7f6f7;
 }
 
@@ -887,4 +883,8 @@ body::-webkit-scrollbar-thumb:hover {
 
 .dark-mode .lotISG2 {
   filter: invert(1);
+}
+
+.dark-mode .kMtULL {
+  filter: invert();
 }
