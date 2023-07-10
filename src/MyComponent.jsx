@@ -11,8 +11,8 @@ const MyComponent = () => {
     };
 
     const profileImageSrc = isDarkMode
-    ? 'https://i.postimg.cc/qvqzqbfh/Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Goat.png'
-    : 'https://i.postimg.cc/3xwZNCwQ/gray.png';
+    ? 'https://i.postimg.cc/vBrFk5ch/Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Goat-removebg-preview.png'
+    : 'https://i.postimg.cc/DfBkkRkG/prof-removebg-preview.png';
 
 
     useEffect(() => {

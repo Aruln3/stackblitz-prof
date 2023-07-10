@@ -499,6 +499,7 @@ html {
   font-weight: 600;
   font-size: 15px;
   font-family: 'Capriola', sans-serif;
+  color: rgb(0, 0, 0);
   text-shadow: 0px 0px 4px rgb(84, 218, 223); 
 }
 
@@ -561,7 +562,8 @@ html {
     font-weight: 600;
     font-size: 19px;
     font-family: 'Capriola', sans-serif;
-    text-shadow: none;
+    color: rgb(0, 0, 0);
+    text-shadow: 0px 0px 4px rgb(84, 218, 223);
   }
   
 }
