@@ -58,7 +58,6 @@ div {
   }
 }
 
-
 .dddSHA {
   flex-direction: column;
   position: relative;
@@ -830,7 +829,7 @@ button:active {
 }
 
 .dark-mode:root {
-  --address-bar-color: #101111;
+  --address-bar-color: #91ff02;
   --footer-color: #202222;
 }
 
@@ -860,4 +859,32 @@ body::-webkit-scrollbar-thumb:hover {
 .dark-mode body::-webkit-scrollbar {
   background-color: #1b1d1d;
   border-radius: 9px;
+}
+
+.dark-mode .ggtBko {
+  border: 2px solid #54dadf;
+  transition: none 0s ease 0s;
+  box-shadow: #54dadf 8px 8px 0px 0px;
+  color: rgb(29, 29, 29);
+  background-color: rgb(21, 22, 22);
+}
+
+.dark-mode .gXKGT {
+  font-weight: 500;
+  font-size: 14px;
+  font-family: 'Capriola', sans-serif;
+  line-height: 1.5;
+  color: #e7f6f7;
+}
+
+.dark-mode .lotISG {
+  filter: invert(1);
+}
+
+.dark-mode .lotISG1 {
+  filter: invert(1);
+}
+
+.dark-mode .lotISG2 {
+  filter: invert(1);
 }
