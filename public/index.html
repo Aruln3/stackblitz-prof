@@ -17,6 +17,20 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="text/javascript">
+    // Disable right-click context menu
+    document.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+    });
+
+    // Disable copy-paste
+    document.addEventListener('keydown', function(e) {
+      // Disable Ctrl+C (Cmd+C on macOS) and Ctrl+V (Cmd+V on macOS)
+      if ((e.ctrlKey || e.metaKey) && (e.key === 'c' || e.key === 'v')) {
+        e.preventDefault();
+      }
+    });
+  </script>
   <title>Arul</title>
   <link rel="icon" type="image/x-icon" href="https://i.postimg.cc/Wb0k417R/d-fotor-20230612175029.png">
   <style>
