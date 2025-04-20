@@ -11,8 +11,8 @@ const MyComponent = () => {
     };
 
     const profileImageSrc = isDarkMode
-    ? 'https://i.postimg.cc/pLbs7H87/profile-pic-removebg-preview.png'
-    : 'https://i.postimg.cc/LXXDf6Kq/profile-pic-2-ai-brush-removebg-v1hbqdz.png';
+    ? 'https://i.postimg.cc/LXXDf6Kq/profile-pic-2-ai-brush-removebg-v1hbqdz.png'
+    : 'https://i.postimg.cc/FKD5NRV1/profile-pic-ai-brush-removebg-xdr3j0b.png';
 
     // https://i.postimg.cc/DfBkkRkG/prof-removebg-preview.png
     // 'https://i.postimg.cc/vBrFk5ch/Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Goat-removebg-preview.png'
