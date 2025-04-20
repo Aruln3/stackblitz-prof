@@ -9,6 +9,16 @@ const Header = () => {
   const [showArrow, setShowArrow] = useState(false); // State to track arrow visibility
   const [isDarkMode, setIsDarkMode] = useState(false);
 
+
+  const toggleTheme = () => {
+      setIsDarkMode(!isDarkMode);
+    };
+
+   const profileImageSrc = isDarkMode
+    ? 'https://i.postimg.cc/LXXDf6Kq/profile-pic-2-ai-brush-removebg-v1hbqdz.png'
+    : 'https://i.postimg.cc/FKD5NRV1/profile-pic-ai-brush-removebg-xdr3j0b.png';
+
+  
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
@@ -97,6 +107,7 @@ const Header = () => {
           data-testid="TopBar-ProfileImage"
           filter="none"
           className="profile-picture"
+          onClick={toggleTheme}
         />
         <h3 className="logo1">Arul‎‎ D</h3>
       </div>
