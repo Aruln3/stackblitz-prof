@@ -101,7 +101,7 @@ const Header = () => {
    <button onClick={handleLogoClick}>
       <div className="profile-picture-container logo">
         <img
-          src="https://i.postimg.cc/DfBkkRkG/prof-removebg-preview.png"
+          src={profileImageSrc}
           alt=""
           role="presentation"
           data-testid="TopBar-ProfileImage"
